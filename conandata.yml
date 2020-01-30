@@ -1,4 +1,4 @@
 sources:
-  "1.0.0":
-    url: "https://github.com/libauthor/libname"
-    sha256: "98f6f57aab0a424469619ed3047728f0d3901ce8f0dea919c11e7966d807e870"
+  "2.35.1":
+    url: "https://download.gnome.org/sources/atk/2.35/atk-2.35.1.tar.xz"
+    sha256: "be9360fa3f845e91f001c20e73b3a0315b38983411b1dc008195f779ac543884"
