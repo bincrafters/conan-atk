@@ -50,6 +50,9 @@ class LibnameConan(ConanFile):
         tools.get(**self.conan_data["sources"][self.version])
         extracted_dir = self.name + "-" + self.version
         os.rename(extracted_dir, self._source_subfolder)
+        tools.replace_in_file(os.path.join(self._source_subfolder, 'meson.build'),
+            "subdir('tests')",
+            "#subdir('tests')")
 
     def _configure_meson(self):
         meson = Meson(self)
