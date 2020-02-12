@@ -9,11 +9,10 @@ class LibnameConan(ConanFile):
     description = "set of accessibility interfaces that are implemented by other toolkits and applications"
     topics = ("conan", "atk", "accessibility")
     url = "https://github.com/bincrafters/conan-atk"
-    homepage = "https://www.atk.org/"
-    license = "LGPL-2.1"
+    homepage = "https://www.atk.org"
+    license = "LGPL-2.1-or-later"
     generators = "pkg_config"
 
-    # Options may need to change depending on the packaged library
     settings = "os", "arch", "compiler", "build_type"
     options = {
         "shared": [True, False],
@@ -38,9 +37,6 @@ class LibnameConan(ConanFile):
     
     def requirements(self):
         self.requires('glib/2.58.3@bincrafters/stable')
-
-    def system_requirements(self):
-        pass
 
     def configure(self):
         del self.settings.compiler.libcxx
@@ -76,9 +72,10 @@ class LibnameConan(ConanFile):
         meson.build()
 
     def package(self):
-        self.copy(pattern="LICENSE", dst="licenses", src=self._source_subfolder)
+        self.copy(pattern="COPYING", dst="licenses", src=self._source_subfolder)
         meson = self._configure_meson()
         meson.install()
+        tools.rmdir(os.path.join(self.package_folder, "lib", "pkgconfig"))
         if self.settings.compiler == "Visual Studio" and not self.options.shared:
             os.rename(os.path.join(self.package_folder, 'lib', 'libatk-1.0.a'), os.path.join(self.package_folder, 'lib', 'atk-1.0.lib'))
 
