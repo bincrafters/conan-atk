@@ -1,8 +1,8 @@
 ## Package Status
 
-| Bintray | Windows | Linux & macOS |
-|:--------:|:---------:|:-----------------:|
-|[![Download](https://api.bintray.com/packages/bincrafters/public-conan/package_name%3Abincrafters/images/download.svg) ](https://bintray.com/bincrafters/public-conan/package_name%3Abincrafters/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/github/bincrafters/conan-package_name?svg=true)](https://ci.appveyor.com/project/bincrafters/conan-package_name)|[![Build Status](https://travis-ci.com/bincrafters/conan-package_name.svg)](https://travis-ci.com/bincrafters/conan-package_name)|
+| Bintray | Windows | Linux | macOS |
+|:--------:|:---------:|:---------:|:---------:|
+|[![Download](https://api.bintray.com/packages/bincrafters/public-conan/atk%3Abincrafters/images/download.svg) ](https://bintray.com/bincrafters/public-conan/atk%3Abincrafters/_latestVersion)|[![Build status](https://ci.appveyor.com/api/projects/status/github/bincrafters/conan-atk?svg=true)](https://ci.appveyor.com/project/bincrafters/conan-atk)|[![Build Status](https://github.com/bincrafters/conan-atk/workflows/.github/workflows/conan.yml/badge.svg)](https://github.com/bincrafters/conan-atk/actions)|[![Build Status](https://travis-ci.com/bincrafters/conan-atk.svg)](https://travis-ci.com/bincrafters/conan-atk)|
 
 ## Conan Information
 
