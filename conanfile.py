@@ -32,7 +32,7 @@ class LibnameConan(ConanFile):
     
     def build_requirements(self):
         self.build_requires('meson/0.54.0')
-        if not tools.which('pkg-config'):
+        if not tools.which('pkg-config') or self.settings.os == "Windows":
             self.build_requires('pkg-config_installer/0.29.2@bincrafters/stable')
     
     def requirements(self):
