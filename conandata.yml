@@ -2,3 +2,7 @@ sources:
   "2.35.1":
     url: "https://download.gnome.org/sources/atk/2.35/atk-2.35.1.tar.xz"
     sha256: "be9360fa3f845e91f001c20e73b3a0315b38983411b1dc008195f779ac543884"
+  "2.36.0":
+    url: "https://download.gnome.org/sources/atk/2.36/atk-2.36.0.tar.xz"
+    sha256: "fb76247e369402be23f1f5c65d38a9639c1164d934e40f6a9cf3c9e96b652788"
+
